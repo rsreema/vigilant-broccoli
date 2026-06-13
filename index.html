@@ -1,0 +1,217 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Portfolio of Reema R S — UI designer and web developer."> 
+  <title>Reema R S — Portfolio</title> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+
+  <nav class="nav" aria-label="Main navigation"> 
+    <div class="container nav-inner"> 
+      <span class="nav-brand">Reema R S<span class="dot">.</span></span> 
+      <ul class="nav-links"> 
+        <li><a href="#projects">Projects</a></li> 
+        <li><a href="#blog">Blog</a></li> 
+        <li><a href="#skills">Skills</a></li> 
+        <li><a href="#contact">Contact</a></li> 
+        <li> 
+          <button class="theme-btn" id="theme-toggle" aria-label="Toggle dark mode">&#127769;</button> 
+        </li> 
+      </ul> 
+    </div> 
+  </nav> 
+
+  <header class="hero" id="home"> 
+    <div class="container"> 
+      <p class="hero-tag reveal">Hey, I&#8217;m</p> 
+      <h1 class="hero-name reveal">Reema R S</h1> 
+      <p class="hero-role reveal">UI Designer &amp; Web Developer &#8212; <span class="highlight">B.Tech CSE, Kerala</span></p> 
+      <p class="hero-bio reveal">I design fluid interfaces, build elegant frontends, and engineer smart web solutions. Currently learning in public with ZERO2DEV.</p> 
+      <div class="hero-ctas reveal"> 
+        <a href="#projects" class="btn btn-primary">See My Projects</a> 
+        <a href="https://www.figma.com/design/qna3dJGXtLp6g4eQJY55qN/Untitled?node-id=0-1&p=f&t=f6FAikOlKHfNj4af-0" target="_blank" rel="noopener" class="btn btn-secondary">View Figma Design &#8599;</a> 
+      </div> 
+    </div> 
+  </header> 
+
+  <main> 
+    <section class="section" id="projects"> 
+      <div class="container"> 
+        <p class="section-label">01 &#8212; Selected Work</p> 
+        <h2 class="section-title">Projects</h2> 
+
+        <div class="filter-wrapper reveal">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="web">Web Dev</button>
+            <button class="filter-btn" data-filter="code">Automation</button>
+          </div>
+          <div class="project-count" id="project-counter">Loading projects...</div>
+        </div>
+
+        <div class="projects-grid-wrapper">
+          <div class="projects-grid" id="projects-container"> 
+
+            <article class="card reveal" data-category="design"> 
+              <div class="card-content">
+                <span class="card-tag">UI / UX Design</span> 
+                <h3 class="card-title">LUMA AI</h3> 
+                <p class="card-desc">An advanced intelligent interface design system built to bridge AI operations with intuitive layout systems, prototyping interactive application states.</p> 
+                
+                <div class="figma-embed-container">
+                  <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2Fqna3dJGXtLp6g4eQJY55qN%2FUntitled%3Fnode-id%3D0-1%26p%3Df%26t%3Df6FAikOlKHfNj4af-0" allowfullscreen></iframe>
+                </div>
+
+                <div class="card-meta"> 
+                  <span class="chip">Figma</span> 
+                  <span class="chip">Design System</span> 
+                  <span class="chip">Interactive Prototype</span> 
+                </div> 
+                <a href="https://www.figma.com/design/qna3dJGXtLp6g4eQJY55qN/Untitled?node-id=0-1&p=f&t=f6FAikOlKHfNj4af-0" target="_blank" rel="noopener" class="card-link">Live Preview &#8599;</a> 
+              </div>
+            </article> 
+
+            <article class="card reveal" data-category="web"> 
+              <div class="card-content">
+                <span class="card-tag">Web Development</span> 
+                <h3 class="card-title">Folio</h3> 
+                <p class="card-desc">This digital space. Semantic layout baseline engineered via robust custom architectural tokens and clean layout structures.</p> 
+                <div class="card-meta"> 
+                  <span class="chip">HTML</span> 
+                  <span class="chip">CSS Grid</span> 
+                  <span class="chip">JavaScript</span> 
+                </div> 
+                <a href="https://github.com" target="_blank" rel="noopener" class="card-link">View code &#8599;</a> 
+              </div>
+            </article> 
+
+            <article class="card reveal" data-category="code"> 
+              <div class="card-content">
+                <span class="card-tag">Automation</span> 
+                <h3 class="card-title">Pulse</h3> 
+                <p class="card-desc">An automation framework that parses remote payloads data fields into custom targeted alerts orchestrated completely over virtual cloud scripts.</p> 
+                <div class="card-meta"> 
+                  <span class="chip">Python</span> 
+                  <span class="chip">GitHub Actions</span> 
+                </div> 
+                <a href="#contact" class="card-link">In progress &#8594;</a> 
+              </div>
+            </article> 
+
+          </div> 
+        </div>
+      </div> 
+    </section> 
+
+    <section class="section section-alt" id="blog">
+      <div class="container">
+        <p class="section-label">02 &#8212; Insights</p>
+        <h2 class="section-title">Latest Writing</h2>
+        
+        <div class="blog-grid">
+          <article class="blog-card reveal">
+            <div class="blog-meta-top">June 10, 2026</div>
+            <h3 class="blog-title">Understanding Design Tokens in CSS Architecture</h3>
+            <p class="blog-excerpt">Design tokens act as the absolute single source of truth for design parameters. Learn how mapping them directly to native CSS custom properties keeps UI changes sync-safe.</p>
+            <a href="#" class="blog-link">Read More</a>
+          </article>
+
+          <article class="blog-card reveal">
+            <div class="blog-meta-top">May 28, 2026</div>
+            <h3 class="blog-title">Mastering CSS Grid Layout Systems Efficiently</h3>
+            <p class="blog-excerpt">Grid structures make responsive designs simple without complex wrapper math. This guide covers implicit tracks and card structures for cleaner responsive interfaces.</p>
+            <a href="#" class="blog-link">Read More</a>
+          </article>
+
+          <article class="blog-card reveal">
+            <div class="blog-meta-top">May 15, 2026</div>
+            <h3 class="blog-title">Building Accessible Components with Vanilla JS</h3>
+            <p class="blog-excerpt">Accessibility shouldn't be secondary when coding custom scripts. Discover simple techniques for applying correct aria attributes dynamically to responsive navigation elements.</p>
+            <a href="#" class="blog-link">Read More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills"> 
+      <div class="container"> 
+        <p class="section-label">03 &#8212; Toolkit</p> 
+        <h2 class="section-title">Skills</h2> 
+
+        <div class="skills-list"> 
+          <div class="skill reveal"> 
+            <div class="skill-head"> 
+              <span class="skill-name">Figma &amp; UI Design</span> 
+              <span class="skill-pct">85%</span> 
+            </div> 
+            <div class="skill-track"> 
+              <div class="skill-fill" style="--w: 85%;"></div> 
+            </div> 
+          </div> 
+
+          <div class="skill reveal"> 
+            <div class="skill-head"> 
+              <span class="skill-name">HTML &amp; CSS Grid</span> 
+              <span class="skill-pct">75%</span> 
+            </div> 
+            <div class="skill-track"> 
+              <div class="skill-fill" style="--w: 75%;"></div> 
+            </div> 
+          </div> 
+
+          <div class="skill reveal"> 
+            <div class="skill-head"> 
+              <span class="skill-name">JavaScript (ES6+)</span> 
+              <span class="skill-pct">55%</span> 
+            </div> 
+            <div class="skill-track"> 
+              <div class="skill-fill" style="--w: 55%;"></div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </section> 
+
+    <section class="section section-alt" id="contact"> 
+      <div class="container"> 
+        <p class="section-label">04 &#8212; Say Hello</p> 
+        <h2 class="section-title">Contact</h2> 
+        <p class="contact-lead">Open to engineering opportunities, design sprints, and public collaborations. Drop a line anytime.</p> 
+
+        <div class="contact-links"> 
+          <a href="mailto:rsreema@gmail.com" class="contact-link"> 
+            <span class="contact-link-label">Email</span> 
+            <span class="contact-link-value">rsreema@gmail.com</span> 
+          </a> 
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-link"> 
+            <span class="contact-link-label">GitHub</span> 
+            <span class="contact-link-value">github.com/reema &#8599;</span> 
+          </a> 
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link"> 
+            <span class="contact-link-label">LinkedIn</span> 
+            <span class="contact-link-value">linkedin.com/in/reema &#8599;</span> 
+          </a> 
+        </div> 
+      </div> 
+    </section> 
+  </main> 
+
+  <footer class="footer"> 
+    <div class="container"> 
+      <p>Built from scratch with HTML, CSS &amp; JavaScript &#8212; ZERO2DEV 2026.</p> 
+      <p class="footer-muted">&#169; 2026 Reema R S. Designed in Figma, coded by hand.</p> 
+    </div> 
+  </footer> 
+
+  <button class="to-top" id="to-top" aria-label="Back to top">&#8593;</button> 
+
+  <script src="script.js"></script> 
+</body> 
+</html>
